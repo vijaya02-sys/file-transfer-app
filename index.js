@@ -38,7 +38,7 @@ const uploadFile = () => {
 
     const files = fileInput.files[0];
     const formData = new FormData();
-    formData.append(file);
+    formData.append("myfile", file);
 
     const xhr = new XMLHttpRequest();
     xhr.onreadystatechange = () => {
